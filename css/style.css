@@ -1,0 +1,309 @@
+
+/* =========================================
+   AI LEARNING HUB
+   Common Website Styles
+   Powered by Corvit
+========================================= */
+
+/* 1. CSS Variables */
+:root {
+    --navy: #101B3D;
+    --navy-light: #192951;
+    --blue: #2563EB;
+    --blue-dark: #1D4ED8;
+    --purple: #805AD5;
+    --background: #F5F7FC;
+    --white: #FFFFFF;
+    --text: #172033;
+    --text-light: #64748B;
+    --border: #E2E8F0;
+
+    --container-width: 1180px;
+    --section-space: 85px;
+}
+
+/* 2. Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* 3. Reusable Container */
+.container {
+    width: min(90%, var(--container-width));
+    margin: 0 auto;
+}
+
+/* 4. Header and Navigation */
+.site-header {
+    background-color: var(--navy);
+    color: var(--white);
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.brand-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.brand-tag {
+    font-size: 10px;
+    color: #A5B4FC;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: #DCE5F7;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #93C5FD;
+}
+
+/* 5. Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--blue-dark);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    color: var(--white);
+}
+
+.btn-outline:hover {
+    background-color: var(--white);
+    color: var(--navy);
+}
+
+/* 6. Common Section Styles */
+.section-padding {
+    padding: var(--section-space) 0;
+}
+
+.section-label {
+    display: inline-block;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-heading h2,
+.intro-content h2,
+.why-content h2,
+.journey-content h2 {
+    color: var(--navy);
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.25;
+    margin-bottom: 17px;
+}
+
+.section-heading p,
+.intro-content p,
+.why-content > p,
+.journey-content > p {
+    color: var(--text-light);
+    max-width: 760px;
+}
+
+/* 7. Text Links */
+.text-link {
+    display: inline-block;
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 17px;
+    transition: color 0.3s ease;
+}
+
+.text-link:hover {
+    color: var(--purple);
+}
+
+/* 8. Footer */
+.site-footer {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 70px;
+    padding: 65px 0;
+}
+
+.footer-about h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.footer-about p {
+    color: #B8C4DC;
+    max-width: 440px;
+    font-size: 14px;
+}
+
+.corvit-brand {
+    display: inline-block;
+    margin-top: 20px;
+    color: #93C5FD;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-links h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #B8C4DC;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-bottom p {
+    color: #AAB7D0;
+    font-size: 13px;
+}
+
+/* 9. Responsive Navigation and Layout */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 18px 0;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    .footer-content {
+        gap: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --section-space: 60px;
+    }
+
+    .main-nav {
+        gap: 10px 15px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .btn {
+        padding: 12px 18px;
+    }
+}
