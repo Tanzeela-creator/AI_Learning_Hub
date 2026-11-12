@@ -1,0 +1,220 @@
+
+/* =========================================
+   AI LEARNING HUB
+   Homepage Specific Styles
+========================================= */
+
+/* 1. Hero Section */
+.hero {
+    background:
+        radial-gradient(circle at 85% 20%, rgba(128, 90, 213, 0.35), transparent 35%),
+        linear-gradient(120deg, #101B3D 0%, #172D60 55%, #273B80 100%);
+    color: var(--white);
+    padding: 115px 0 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 1180px;
+}
+
+.hero-label {
+    display: inline-block;
+    color: #C4B5FD;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    max-width: 800px;
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.13;
+    letter-spacing: -1.8px;
+    margin-bottom: 24px;
+}
+
+.hero h1 span {
+    display: block;
+    background: linear-gradient(90deg, #60A5FA, #C4B5FD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-content > p {
+    color: #D0DAEF;
+    font-size: 17px;
+    max-width: 650px;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* 2. Introduction */
+.introduction {
+    background-color: var(--white);
+}
+
+.intro-content {
+    max-width: 850px;
+    text-align: center;
+}
+
+.intro-content p {
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+/* 3. Learning Topics */
+.learning-topics {
+    background-color: var(--background);
+}
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.topic-card {
+    background-color: var(--white);
+    padding: 30px 25px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(16, 27, 61, 0.09);
+}
+
+.topic-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAF0FF;
+    color: var(--blue);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.topic-card h3 {
+    color: var(--navy);
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.topic-card p {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* 4. Why Learn AI */
+.why-ai {
+    background-color: var(--white);
+}
+
+.why-content {
+    text-align: center;
+}
+
+.why-content > p {
+    margin: 0 auto;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.benefit-item {
+    padding: 28px 22px;
+    background-color: #F5F7FC;
+    border-radius: 10px;
+    border-bottom: 3px solid var(--blue);
+}
+
+.benefit-item h3 {
+    color: var(--navy);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+/* 5. Learning Journey */
+.learning-journey {
+    background:
+        linear-gradient(120deg, #EAF0FF, #F0EBFF);
+}
+
+.journey-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.journey-content > p {
+    margin: 0 auto 28px;
+}
+
+/* 6. Tablet Responsive */
+@media (max-width: 1000px) {
+    .topic-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero {
+        padding: 95px 0;
+    }
+}
+
+/* 7. Mobile Responsive */
+@media (max-width: 600px) {
+    .hero {
+        padding: 75px 0;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero-content > p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .topic-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topic-card {
+        padding: 25px;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+}
