@@ -25,3 +25,9 @@ This project is developed collaboratively by a five-member team using GitHub bra
 Powered by Corvit branding.
 ## Project Type
 Educational Website | HTML & CSS
+## Contribution
+
+### Contributor Work
+- Updated project documentation.
+- Improved project information.
+- Contributed to AI Learning Hub.
